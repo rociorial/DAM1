@@ -19,6 +19,8 @@ public class  APIs_de_Java{
     int edad = scanner.nextInt();
     System.out.printf("El año que viene tendrás " + (edad+1));
 
+    scanner.close();
+
     System.out.print("\n¿En qué año naciste? ");
     int añoNacimiento = scanner.nextInt();
 
