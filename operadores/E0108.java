@@ -11,6 +11,7 @@ public class E0108 {
 
         System.out.print("Introduce tu edad: ");
         int edad = scanner.nextInt();
+        scanner.close();
 
         System.out.println("Eres mayor de edad");
         boolean mayoriaedad = edad >= 18;
