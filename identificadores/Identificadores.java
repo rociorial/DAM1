@@ -33,6 +33,8 @@ System.out.println("Mi letra preferida es la " + letraPreferida);
 long numEnorme = 234324523;
 edad = (byte)(edad + 1);
 System.out.println("Mi edad es " + edad);
+System.out.println(NUMERO_ALUMNOS);
+System.out.println(numEnorme);
 
 System.out.println(String.format("Tengo %.2f en el monedero ", monedero));
     }
