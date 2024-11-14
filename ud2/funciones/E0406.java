@@ -35,6 +35,6 @@ public class E0406 {
         int n = scanner. nextInt();
         scanner.close();
 
-        System.out.printf("%d es %sprimo\n", n, esPrimo(n) ? "" : "no ");
+        System.out.printf("%d %ses primo\n", n, esPrimo(n) ? "" : "no ");
     }
 }
