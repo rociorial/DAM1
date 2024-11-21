@@ -11,20 +11,20 @@ import java.util.Scanner;
 public class EP0316_Triangulo {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        
+
         System.out.print("Introduzca un número: ");
         int numero = scanner.nextInt();
         scanner.close();
 
-        for(int i = 0; i < numero; i++){
-            for(int j = 0; j < i; j++){
+        for (int i = 0; i < numero; i++) {
+            for (int j = 0; j < numero - i - 1; j++) {
                 System.out.print(" ");
-                for(int k = 0; k < j; k++){
-                    System.out.print("*");
-                }
-
+            }
+            for (int k = 0; k <= i; k++) {
+                System.out.print("* ");
             }
             System.out.println();
         }
     }
 }
+

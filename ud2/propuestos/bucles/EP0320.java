@@ -23,43 +23,44 @@ public class EP0320 {
         double cajon;
         double bolsillos;
 
-        do{
-            System.out.print("Introduce la cantidad de dinero en el banco: ");
+        // Dinero en el banco
+        do {
+            System.out.print("Introduce la cantidad de dinero en el banco (0 para salir): ");
             banco = scanner.nextDouble();
-            bancoTotal = bancoTotal + banco;
-        }while (banco != 0);
+            bancoTotal += banco; 
+        } while (banco != 0);
         System.out.println();
 
-        do{
-            System.out.print("Introduce la cantidad de dinero en el hucha: ");
+        do {
+            System.out.print("Introduce la cantidad de dinero en la hucha (0 para salir): ");
             hucha = scanner.nextDouble();
-            huchaTotal = huchaTotal + hucha;
-        }while (hucha != 0);
+            huchaTotal += hucha;
+        } while (hucha != 0);
         System.out.println();
 
-        do{
-            System.out.print("Introduce la cantidad de dinero en el cajón: ");
+        do {
+            System.out.print("Introduce la cantidad de dinero en el cajón (0 para salir): ");
             cajon = scanner.nextDouble();
-            cajonTotal = cajonTotal + cajon;
-        }while (cajon != 0);
+            cajonTotal += cajon;
+        } while (cajon != 0);
         System.out.println();
 
-        do{
-            System.out.print("Introduce la cantidad de dinero en el bolsillos: ");
+        do {
+            System.out.print("Introduce la cantidad de dinero en los bolsillos (0 para salir): ");
             bolsillos = scanner.nextDouble();
-            bolsillosTotal = bolsillosTotal + bolsillos;
-        }while (bolsillos != 0);
+            bolsillosTotal += bolsillos;
+        } while (bolsillos != 0);
         System.out.println();
-        
+
         scanner.close();
 
-        System.out.println("Dinero en el banco: " + banco);
-        System.out.println("Dinero en la hucha: " + hucha);
-        System.out.println("Dinero en el cajón: " + cajon);
-        System.out.println("Dinero en los bolsillos: " + bolsillos);
+        total = bancoTotal + huchaTotal + cajonTotal + bolsillosTotal;
 
-        total = banco + hucha + cajon + bolsillos;
+        System.out.println("Dinero total acumulado en el banco: " + bancoTotal);
+        System.out.println("Dinero total acumulado en la hucha: " + huchaTotal);
+        System.out.println("Dinero total acumulado en el cajón: " + cajonTotal);
+        System.out.println("Dinero total acumulado en los bolsillos: " + bolsillosTotal);
 
-        System.out.println("\nDinero total: " + total);
+        System.out.println("\nDinero total acumulado: " + total);
     }
 }

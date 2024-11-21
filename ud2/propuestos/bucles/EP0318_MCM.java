@@ -8,6 +8,16 @@ package ud2.propuestos.bucles;
 import java.util.Scanner;
 
 public class EP0318_MCM {
+
+    public static int calcularMCD(int a, int b) {
+        while (b != 0) {
+            int temp = b;
+            b = a % b;
+            a = temp;
+        }
+        return a;
+    }
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Introduce dos números para calcular su MCM: ");
@@ -15,18 +25,9 @@ public class EP0318_MCM {
         int b = scanner.nextInt();
         scanner.close();
 
-        // |a x b|
-        int multiplicacion = Math.abs(a * b);
+        int mcd = calcularMCD(a, b);
+        int mcm = Math.abs(a * b) / mcd;
 
-
-        // MCD(a, b)
-        for(int i = a; i > 0; i--){
-            if (a % i == 0 && b % i == 0){
-                int mcd = i;
-                int mcm = mcd / i;
-                System.out.printf("MCM(%d, %d) = %d", a, b, mcm);
-                break;
-            }
-        }
+        System.out.printf("MCM(%d, %d) = %d\n", a, b, mcm);
     }
 }
