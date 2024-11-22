@@ -1,4 +1,4 @@
-package ud2.util;
+package util;
 /* 
 
 1. LocalDate - Obtener la fecha actual

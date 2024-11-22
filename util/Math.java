@@ -1,4 +1,4 @@
-package ud2.util;
+package util;
 /* 
 
 1. Math.abs(x) - Valor absoluto
